@@ -3,10 +3,14 @@ const { devices } = require('@playwright/test');
 module.exports = {
   use: {
     browserName: 'chromium',
-    headless: false
+    headless: false,
+    actionTimeout: 30000,
+    navigationTimeout: 60000
   },
 
-  workers: 2,
+  timeout: 60000,
+
+  workers: 1,
 
   projects: [
     {
