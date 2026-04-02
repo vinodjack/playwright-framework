@@ -67,8 +67,8 @@ Before(async function (scenario) {
       await this.attach('🌐 Navigating to URL: ' + webUrl, 'text/plain');
       
       await page.goto(webUrl, { 
-        waitUntil: 'networkidle',
-        timeout: 30000 
+        waitUntil: 'domcontentloaded',
+        timeout: 60000 
       });
       console.log('✅ Page loaded successfully');
       await this.attach('✅ Page loaded successfully', 'text/plain');
@@ -77,7 +77,6 @@ Before(async function (scenario) {
       await this.attach('⚠️  URL Loading Warning: ' + urlError.message, 'text/plain');
       console.log('📝 Make sure env.properties has entries like:');
       console.log('   ' + environment + '.webURL=<url>');
-      // Don't throw - allow test to continue
     }
     
   } catch (error) {

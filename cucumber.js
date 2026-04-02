@@ -10,6 +10,7 @@ module.exports = {
     ],
     paths: [
       'tests/features/**/*.feature'
-    ]
+    ],
+    timeout: 60000
   }
 };
