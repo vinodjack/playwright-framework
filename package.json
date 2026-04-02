@@ -1,0 +1,15 @@
+{
+  "name": "playwright-elite-framework",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "node runner/TestRunner.js"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^10.0.0",
+    "@playwright/test": "^1.43.0",
+    "commander": "^11.0.0",
+    "cucumber-html-reporter": "^7.1.1",
+    "glob": "^10.0.0",
+    "js-yaml": "^4.1.0"
+  }
+}

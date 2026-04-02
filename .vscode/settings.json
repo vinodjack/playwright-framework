@@ -1,0 +1,16 @@
+{
+  "gherkin.glue": [
+    "tests/stepDefinitions/**/*.js",
+    "support/**/*.js"
+  ],
+  "gherkin.features": [
+    "tests/features/**/*.feature"
+  ],
+  "gherkin.require": [
+    "tests/stepDefinitions/**/*.js"
+  ],
+  "[gherkin]": {
+    "editor.defaultFormatter": "CucumberOpen.cucumber-official",
+    "editor.formatOnSave": true
+  }
+}
