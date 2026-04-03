@@ -16,7 +16,7 @@ module.exports = {
     {
       name: 'UI_Test',
       testMatch: '**/features/UI/**/*.feature',
-      tags: ['@login']
+      tags: ['@RegistrationForm']
     },
     {
       name: 'API_Test',
@@ -31,8 +31,4 @@ module.exports = {
     projectName: 'UI_Test'
   },
 
-  tagGroups: {
-    smoke: '@smoke',
-    regression: '@regression or @critical'
-  }
 };

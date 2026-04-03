@@ -114,7 +114,7 @@ function generateReports(code) {
         'Browser': finalConfig.browser || 'chromium',
         'Platform': process.platform,
         'Execution Type': finalConfig.executionType || 'LOCAL',
-        'Parallel Workers': finalConfig.parallel || '2'
+        'Parallel Workers': finalConfig.parallel || '1'
       }
     };
     
